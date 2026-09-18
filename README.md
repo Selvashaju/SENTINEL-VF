@@ -3,7 +3,7 @@
 ### Multi-Vendor DVR/NVR Forensic Analysis Tool
 
 <p align="center">
-  <img src="assets/01_title_card.png" width="100%" alt="SENTINEL-VF" />
+<img src="assets/01_title_card.png" width="100%" alt="SENTINEL-VF" />
 </p>
 
 ---
@@ -47,3 +47,49 @@ Timeline / Timestamp Analysis
 Evidence Validation
         ↓
 Forensic Reporting
+```
+
+---
+
+## 🔒 Evidence Integrity
+
+Evidence files are validated using SHA-256 hashing to detect tampering or corruption during acquisition and analysis.
+
+```python
+import hashlib
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+actual = sha256_file("evidence.mp4")
+expected = "EXPECTED_HASH"
+
+print("PASS" if actual == expected else "FAIL")
+```
+
+---
+
+## 🧩 Three-Engine Architecture
+
+<p align="center">
+  <img
+    src="assets/02_three_engines.png"
+    width="100%"
+    alt="SENTINEL-VF Three Engine Architecture"
+  />
+</p>
+
+### 🔹 Universal Parser
+Handles identification and parsing of supported DVR/NVR evidence formats.
+
+### 🔹 Universal Recovery Engine
+Focuses on recovery and reconstruction of surveillance footage where supported.
+
+### 🔹 Evidence Intelligence
+Organizes metadata and forensic context to support investigation and reporting.
+
+---
