@@ -1,27 +1,179 @@
-Project Status sectionக்கு கீழே இதை paste பண்ணுங்க:
+# 🔐 SENTINEL-VF
+
+### Multi-Vendor DVR/NVR Forensic Analysis Tool
+
+<p align="center">
+<img src="assets/01_title_card.png" width="100%" alt="SENTINEL-VF" />
+</p>
+
 ---
 
-## 🎬 Production Assets
+## 📌 About the Project
 
-This repository includes the visual and subtitle assets prepared for the
-SENTINEL-VF project presentation.
+**SENTINEL-VF** is a digital forensic analysis platform focused on the acquisition, recovery, and analysis of surveillance video evidence from different DVR/NVR environments.
 
-| File | Purpose |
-|---|---|
-| `01_title_card.png` | Opening visual for Scene 1 |
-| `02_three_engines.png` | Three-engine innovation graphic for Scene 3 |
-| `03_forensic_pipeline.png` | Forensic workflow visual for Scene 4 |
-| `04_outro.png` | Closing visual for Scene 8 |
-| `05_subtitles_draft.srt` | Draft subtitles aligned to the current 3:15 scene plan |
+The project is designed around the idea of treating surveillance recordings as forensic evidence, while preserving metadata, integrity, provenance, and investigative context.
 
-### 🎨 Visual Direction
+---
 
-- Charcoal / near-black background
-- White primary text
-- Amber highlights
-- Clean, restrained forensic-documentary aesthetic
-- Avoid flashy or glitch-heavy transitions
+## 🎯 Core Objectives
 
-> **Note:** Re-sync subtitle timing against the final exported voice-over before submission, because generated audio duration may differ slightly.
+- 🔍 Analyze surveillance video evidence
+- 🎥 Support multi-vendor DVR/NVR environments
+- 📦 Extract video and metadata
+- ♻️ Explore recovery of deleted surveillance footage
+- 🕒 Normalize timestamps for investigation
+- 🔐 Verify evidence integrity using SHA-256
+- 📋 Support forensic reporting and evidence documentation
+- 🧩 Handle proprietary surveillance formats
+
+---
+
+## ⚙️ Forensic Workflow
+
+```text
+Evidence Acquisition
+        ↓
+Device / Format Identification
+        ↓
+Parsing & Metadata Extraction
+        ↓
+Video Analysis
+        ↓
+Recovery
+        ↓
+Timeline / Timestamp Analysis
+        ↓
+Evidence Validation
+        ↓
+Forensic Reporting
+```
+
+---
+
+## 🔒 Evidence Integrity
+
+Evidence files are validated using SHA-256 hashing to detect tampering or corruption during acquisition and analysis.
+
+```python
+import hashlib
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+actual = sha256_file("evidence.mp4")
+expected = "EXPECTED_HASH"
+
+print("PASS" if actual == expected else "FAIL")
+```
+
+---
+
+## 🧩 Three-Engine Architecture
+
+<p align="center">
+  <img
+    src="assets/02_three_engines.png"
+    width="100%"
+    alt="SENTINEL-VF Three Engine Architecture"
+  />
+</p>
+
+### 🔹 Universal Parser
+Handles identification and parsing of supported DVR/NVR evidence formats.
+
+### 🔹 Universal Recovery Engine
+Focuses on recovery and reconstruction of surveillance footage where supported.
+
+### 🔹 Evidence Intelligence
+Organizes metadata and forensic context to support investigation and reporting.
+
+---
+
+## 🔎 Forensic Pipeline
+
+<p align="center">
+  <img
+    src="assets/03_forensic_pipeline.png"
+    width="100%"
+    alt="SENTINEL-VF Forensic Pipeline"
+  />
+</p>
+
+### Investigation Flow
+
+```text
+Acquisition
+    ↓
+Analysis
+    ↓
+Recovery
+    ↓
+Metadata Extraction
+    ↓
+Reconstruction
+    ↓
+Chain of Custody
+```
+
+---
+
+## 📂 Repository Structure
+
+```text
+SENTINEL-VF/
+│
+├── assets/
+│   ├── 01_title_card.png
+│   ├── 02_three_engines.png
+│   ├── 03_forensic_pipeline.png
+│   └── 04_outro.png
+│
+├── docs/
+│   ├── 05_subtitles_draft.srt
+│   └── PRODUCTION_PACK_README.txt
+│
+└── README.md
+```
+
+---
+
+## 🚧 Project Status
+
+**Current Status:** Development in Progress
+
+### ✅ Currently Documented / Prepared
+
+- Multi-vendor DVR/NVR forensic analysis concept
+- Three-engine architecture
+- Forensic acquisition → analysis → recovery → metadata → reconstruction workflow
+- Evidence integrity using SHA-256
+- Production and presentation assets
+- Forensic workflow documentation
+
+### 🔜 Planned Development
+
+- DVR/NVR format parser implementation
+- Evidence metadata extraction
+- Video recovery workflows
+- Timestamp normalization
+- Forensic reporting
+- Additional vendor support
+
+---
+
+## 🔮 Future Development
+
+The project can be extended with:
+
+- Support for additional DVR/NVR vendors and proprietary formats
+- Automated evidence analysis workflows
+- Advanced recovery and reconstruction capabilities
+- Timeline and event correlation
+- Expanded forensic reporting and evidence tracking
 
 ---
