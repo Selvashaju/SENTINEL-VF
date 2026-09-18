@@ -177,3 +177,31 @@ The project can be extended with:
 - Expanded forensic reporting and evidence tracking
 
 ---
+
+## 🎬 Project Visuals
+
+### 🖥️ Title Card
+
+<p align="center">
+  <img src="assets/01_title_card.png" width="90%" alt="SENTINEL-VF Title Card" />
+</p>
+
+### 🧩 Three-Engine Architecture
+
+<p align="center">
+  <img src="assets/02_three_engines.png" width="90%" alt="SENTINEL-VF Three-Engine Architecture" />
+</p>
+
+### 🔎 Forensic Pipeline
+
+<p align="center">
+  <img src="assets/03_forensic_pipeline.png" width="90%" alt="SENTINEL-VF Forensic Pipeline" />
+</p>
+
+### 🎬 Project Outro
+
+<p align="center">
+  <img src="assets/04_outro.png" width="90%" alt="SENTINEL-VF Outro" />
+</p>
+
+---
