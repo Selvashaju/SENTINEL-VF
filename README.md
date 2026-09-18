@@ -121,3 +121,23 @@ Chain of Custody
 ```
 
 ---
+
+## 📂 Repository Structure
+
+```text
+SENTINEL-VF/
+│
+├── assets/
+│   ├── 01_title_card.png
+│   ├── 02_three_engines.png
+│   ├── 03_forensic_pipeline.png
+│   └── 04_outro.png
+│
+├── docs/
+│   ├── 05_subtitles_draft.srt
+│   └── PRODUCTION_PACK_README.txt
+│
+└── README.md
+```
+
+---
