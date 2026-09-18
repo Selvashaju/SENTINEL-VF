@@ -51,25 +51,11 @@ Forensic Reporting
 
 ---
 
-## 🔒 Evidence Integrity
+## 🔐 Evidence Integrity
 
-Evidence files are validated using SHA-256 hashing to detect tampering or corruption during acquisition and analysis.
+The project is designed to support evidence integrity verification using SHA-256 hashing.
 
-```python
-import hashlib
-
-def sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-actual = sha256_file("evidence.mp4")
-expected = "EXPECTED_HASH"
-
-print("PASS" if actual == expected else "FAIL")
-```
+> Implementation details will be added as the forensic processing components are integrated.
 
 ---
 
@@ -203,5 +189,19 @@ The project can be extended with:
 <p align="center">
   <img src="assets/04_outro.png" width="90%" alt="SENTINEL-VF Outro" />
 </p>
+
+---
+
+## 👨‍💻 Project
+
+**SENTINEL-VF**
+
+Developed as part of **Smart India Hackathon 2026 — Problem Statement SIH26150**
+
+**Team:** CipherNest
+
+**Author:** Shaju
+
+GitHub: [@Selvashaju](https://github.com/Selvashaju)
 
 ---
