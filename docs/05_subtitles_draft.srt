@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:10,000
+Every day, surveillance footage that could solve a crime is lost — trapped in proprietary DVR formats investigators can't open.
+
+2
+00:00:10,000 --> 00:00:40,000
+DVR and NVR systems from different vendors lock video evidence in proprietary containers. When a device is damaged or footage is deleted, that evidence is often written off as unrecoverable. SENTINEL-VF changes that — parsing proprietary formats, carving fragmented data, and reconstructing playable video.
+
+3
+00:00:40,000 --> 00:01:10,000
+At the core of SENTINEL-VF, three powerful engines work together. The Universal Recovery Engine reconstructs fragmented video streams. The Universal Parser understands major proprietary DVR formats. The Evidence Graph Engine connects files, metadata, and relationships together.
+
+4
+00:01:10,000 --> 00:01:40,000
+The SENTINEL-VF pipeline is simple to follow, but rigorous at every stage. It begins with secure acquisition, followed by analysis and recovery. Next, metadata is extracted and the recovered data is reconstructed into universal evidence.
+
+5
+00:01:40,000 --> 00:02:10,000
+Here is SENTINEL-VF in action. We begin by creating a new case and securely ingesting the evidence directly from the device. The recovery scan analyzes the storage and reconstructs fragmented video data. The system then presents metadata, a verified hash, and complete provenance.
+
+6
+00:02:10,000 --> 00:02:40,000
+Working with proprietary formats, fragmented storage, and massive volumes of surveillance data presents real challenges. SENTINEL-VF addresses these challenges through a modular parser architecture, a resilient recovery pipeline, and scalable processing.
+
+7
+00:02:40,000 --> 00:03:10,000
+SENTINEL-VF delivers meaningful benefits across the forensic investigation process. For investigators, it means faster access to critical footage. For forensic teams, verified integrity and clear provenance. And for the justice system, evidence integrity is built in from the very first byte.
+
+8
+00:03:10,000 --> 00:03:15,000
+SENTINEL-VF — Team CipherNest. Thank you to the Ministry of Education's Innovation Cell and AICTE.
