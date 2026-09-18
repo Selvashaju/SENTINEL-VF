@@ -93,3 +93,31 @@ Focuses on recovery and reconstruction of surveillance footage where supported.
 Organizes metadata and forensic context to support investigation and reporting.
 
 ---
+
+## 🔎 Forensic Pipeline
+
+<p align="center">
+  <img
+    src="assets/03_forensic_pipeline.png"
+    width="100%"
+    alt="SENTINEL-VF Forensic Pipeline"
+  />
+</p>
+
+### Investigation Flow
+
+```text
+Acquisition
+    ↓
+Analysis
+    ↓
+Recovery
+    ↓
+Metadata Extraction
+    ↓
+Reconstruction
+    ↓
+Chain of Custody
+```
+
+---
