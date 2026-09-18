@@ -141,3 +141,39 @@ SENTINEL-VF/
 ```
 
 ---
+
+## 🚧 Project Status
+
+**Current Status:** Development in Progress
+
+### ✅ Currently Documented / Prepared
+
+- Multi-vendor DVR/NVR forensic analysis concept
+- Three-engine architecture
+- Forensic acquisition → analysis → recovery → metadata → reconstruction workflow
+- Evidence integrity using SHA-256
+- Production and presentation assets
+- Forensic workflow documentation
+
+### 🔜 Planned Development
+
+- DVR/NVR format parser implementation
+- Evidence metadata extraction
+- Video recovery workflows
+- Timestamp normalization
+- Forensic reporting
+- Additional vendor support
+
+---
+
+## 🔮 Future Development
+
+The project can be extended with:
+
+- Support for additional DVR/NVR vendors and proprietary formats
+- Automated evidence analysis workflows
+- Advanced recovery and reconstruction capabilities
+- Timeline and event correlation
+- Expanded forensic reporting and evidence tracking
+
+---
