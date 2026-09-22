@@ -6,127 +6,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SENTINEL-VF | DVR/NVR Forensic Analysis Tool</title>
-
+<title>SENTINEL-VF</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
-
 
 body{
-
-    background:#070b12;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-
+background:#080d14;
+color:white;
 }
 
-
-/* Navigation */
 
 nav{
 
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#111820;
+padding:20px 50px;
 
-    background:#101722;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:20px 50px;
-
-    border-bottom:1px solid #263241;
+border-bottom:1px solid #333;
 
 }
 
 
 nav h2{
-
-    color:#ffb000;
-
+color:#ffb000;
 }
 
 
 nav a{
 
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:15px;
+color:white;
+text-decoration:none;
+margin-left:20px;
 
 }
 
-
-nav a:hover{
-
-    color:#ffb000;
-
-}
-
-
-
-/* Hero */
 
 .hero{
 
-    text-align:center;
-    padding:80px 20px;
+text-align:center;
+padding:70px 20px;
 
 }
 
 
 .hero h1{
 
-    font-size:65px;
+font-size:60px;
 
 }
 
 
 .hero h2{
 
-    color:#ffb000;
-    margin:20px 0;
+color:#ffb000;
+margin:20px;
 
 }
 
 
 .hero p{
 
-    color:#cccccc;
-    font-size:20px;
+color:#ccc;
+font-size:20px;
 
 }
 
 
 .hero img{
 
-    width:75%;
-    margin-top:40px;
-    border-radius:15px;
+width:70%;
+margin-top:40px;
+border-radius:15px;
 
 }
 
 
 
-
-
-/* Sections */
-
-
 section{
 
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:30px 0;
 
 }
 
@@ -134,15 +105,15 @@ section{
 
 .card{
 
-    background:#121b27;
+background:#121b27;
 
-    padding:35px;
+padding:30px;
 
-    margin:35px 0;
+margin:30px 0;
 
-    border-radius:18px;
+border-radius:15px;
 
-    border:1px solid #263241;
+border:1px solid #263241;
 
 }
 
@@ -150,9 +121,9 @@ section{
 
 .card h2{
 
-    color:#ffb000;
+color:#ffb000;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
 
@@ -160,16 +131,7 @@ section{
 
 .card p{
 
-    line-height:1.7;
-    color:#ddd;
-
-}
-
-
-
-.card li{
-
-    margin:10px;
+line-height:1.7;
 
 }
 
@@ -177,29 +139,24 @@ section{
 
 .card img{
 
-    width:100%;
+width:100%;
 
-    margin-top:20px;
+margin-top:20px;
 
-    border-radius:15px;
+border-radius:12px;
 
 }
 
 
 
-
-
-/* Modules */
-
-
 .modules{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
 
-    gap:20px;
+gap:20px;
 
 }
 
@@ -207,11 +164,11 @@ section{
 
 .module{
 
-    background:#172231;
+background:#172231;
 
-    padding:25px;
+padding:25px;
 
-    border-radius:15px;
+border-radius:12px;
 
 }
 
@@ -219,38 +176,29 @@ section{
 
 .module h3{
 
-    color:#ffb000;
-
-    margin-bottom:15px;
+color:#ffb000;
 
 }
 
-
-
-
-
-/* Footer */
 
 
 footer{
 
-    background:#101722;
+text-align:center;
 
-    text-align:center;
+background:#111820;
 
-    padding:30px;
+padding:30px;
 
-    color:#aaa;
+color:#aaa;
 
 }
 
 
-
 </style>
 
+
 </head>
-
-
 
 
 <body>
@@ -259,15 +207,11 @@ footer{
 
 <nav>
 
-
 <h2>🔐 SENTINEL-VF</h2>
-
 
 <div>
 
 <a href="#about">About</a>
-
-<a href="#problem">Problem</a>
 
 <a href="#solution">Solution</a>
 
@@ -275,12 +219,9 @@ footer{
 
 <a href="#team">Team</a>
 
-
 </div>
 
-
 </nav>
-
 
 
 
@@ -289,7 +230,6 @@ footer{
 
 
 <h1>SENTINEL-VF</h1>
-
 
 <h2>
 Multi-Vendor DVR/NVR Forensic Analysis Tool
@@ -301,8 +241,7 @@ Universal Video Forensics & Evidence Integrity Framework
 </p>
 
 
-<img src="/SENTINEL-VF/assets/01_title_card.png"
-alt="SENTINEL-VF">
+<img src="assets/01_title_card.png">
 
 </div>
 
@@ -323,12 +262,9 @@ alt="SENTINEL-VF">
 
 <p>
 
-SENTINEL-VF is a forensic analysis framework designed
-to standardize DVR/NVR evidence acquisition,
-verification, timeline reconstruction and forensic reporting.
-
-The system provides a unified approach for analysing
-surveillance evidence from multiple vendors.
+SENTINEL-VF is a forensic analysis framework designed to
+standardize DVR/NVR evidence acquisition, verification,
+timeline reconstruction and forensic reporting.
 
 </p>
 
@@ -344,7 +280,8 @@ surveillance evidence from multiple vendors.
 
 
 
-<section id="problem">
+
+<section>
 
 
 <div class="card">
@@ -353,22 +290,18 @@ surveillance evidence from multiple vendors.
 <h2>Problem Statement</h2>
 
 
-<p>
-Traditional CCTV forensic investigation faces challenges:
-</p>
-
-
 <ul>
 
 <li>Vendor-specific DVR/NVR formats</li>
 
-<li>Missing or unreliable metadata</li>
+<li>Missing metadata</li>
 
 <li>Timestamp inconsistencies</li>
 
 <li>Difficult evidence verification</li>
 
 <li>Lack of standardized reporting</li>
+
 
 </ul>
 
@@ -377,6 +310,7 @@ Traditional CCTV forensic investigation faces challenges:
 
 
 </section>
+
 
 
 
@@ -394,19 +328,19 @@ Traditional CCTV forensic investigation faces challenges:
 <h2>Our Solution</h2>
 
 
-<img src="/SENTINEL-VF/assets/02_three_engines.png"
-alt="Three Forensic Engines">
+<img src="assets/02_three_engines.png">
 
 
 <p>
 
-SENTINEL-VF introduces multiple forensic engines
-to recover, validate and analyse surveillance evidence.
+Three forensic engines help recover, validate and analyse
+surveillance evidence.
 
 </p>
 
 
 </div>
+
 
 
 
@@ -418,14 +352,14 @@ to recover, validate and analyse surveillance evidence.
 <h2>Forensic Pipeline</h2>
 
 
-<img src="/SENTINEL-VF/assets/03_forensic_pipeline.png"
-alt="Forensic Pipeline">
+<img src="assets/03_forensic_pipeline.png">
 
 
 </div>
 
 
 </section>
+
 
 
 
@@ -447,13 +381,12 @@ alt="Forensic Pipeline">
 <div class="modules">
 
 
-
 <div class="module">
 
 <h3>Evidence Trust Core</h3>
 
 <p>
-Evidence acquisition, hashing and integrity verification.
+Evidence acquisition and integrity verification.
 </p>
 
 </div>
@@ -465,7 +398,7 @@ Evidence acquisition, hashing and integrity verification.
 <h3>Temporal Truth Engine</h3>
 
 <p>
-Timestamp reconstruction and timeline uncertainty analysis.
+Timeline reconstruction and timestamp analysis.
 </p>
 
 </div>
@@ -478,7 +411,7 @@ Timestamp reconstruction and timeline uncertainty analysis.
 <h3>Evidence Knowledge Graph</h3>
 
 <p>
-Device, artifact, event and claim relationship mapping.
+Artifact, device and event relationship mapping.
 </p>
 
 </div>
@@ -491,7 +424,7 @@ Device, artifact, event and claim relationship mapping.
 <h3>AI Review Module</h3>
 
 <p>
-AI assisted evidence review and analysis support.
+AI assisted forensic review.
 </p>
 
 </div>
@@ -501,10 +434,10 @@ AI assisted evidence review and analysis support.
 
 <div class="module">
 
-<h3>Forensic Report Generator</h3>
+<h3>Report Generator</h3>
 
 <p>
-Structured investigation report creation.
+Structured forensic reporting.
 </p>
 
 </div>
@@ -519,55 +452,6 @@ Structured investigation report creation.
 
 </section>
 
-
-
-
-
-
-
-
-<section>
-
-
-<div class="card">
-
-
-<h2>System Workflow</h2>
-
-
-<p>
-
-
-DVR/NVR Evidence
-
-↓
-
-Evidence Acquisition
-
-↓
-
-Integrity Verification
-
-↓
-
-Timeline Reconstruction
-
-↓
-
-Evidence Graph
-
-↓
-
-Forensic Report
-
-
-</p>
-
-
-</div>
-
-
-</section>
 
 
 
@@ -587,7 +471,7 @@ Forensic Report
 
 <p>
 
-Smart India Hackathon 2026 Project
+Smart India Hackathon 2026
 
 <br><br>
 
@@ -607,23 +491,16 @@ SENTINEL-VF Development Team
 
 
 
-
 <footer>
 
-
-<p>
-
 SIH 2026 | Team CipherNest | SENTINEL-VF
-
-</p>
-
 
 </footer>
 
 
 
 
-
 </body>
+
 
 </html>
