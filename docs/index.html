@@ -21,25 +21,30 @@
 
 body{
 
-    background:#080d14;
+    background:#070b12;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
 
 }
 
 
-/* NAVBAR */
+/* Navigation */
 
 nav{
 
     position:sticky;
     top:0;
-    background:#0f1620;
-    padding:20px;
+    z-index:1000;
+
+    background:#101722;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom:1px solid #222;
+
+    padding:20px 50px;
+
+    border-bottom:1px solid #263241;
 
 }
 
@@ -55,8 +60,8 @@ nav a{
 
     color:white;
     text-decoration:none;
-    margin-left:20px;
-    font-size:14px;
+    margin-left:25px;
+    font-size:15px;
 
 }
 
@@ -69,8 +74,7 @@ nav a:hover{
 
 
 
-/* HERO */
-
+/* Hero */
 
 .hero{
 
@@ -82,7 +86,7 @@ nav a:hover{
 
 .hero h1{
 
-    font-size:60px;
+    font-size:65px;
 
 }
 
@@ -90,22 +94,22 @@ nav a:hover{
 .hero h2{
 
     color:#ffb000;
-    margin:20px;
+    margin:20px 0;
 
 }
 
 
 .hero p{
 
+    color:#cccccc;
     font-size:20px;
-    color:#ccc;
 
 }
 
 
 .hero img{
 
-    width:70%;
+    width:75%;
     margin-top:40px;
     border-radius:15px;
 
@@ -113,14 +117,16 @@ nav a:hover{
 
 
 
-/* SECTIONS */
+
+
+/* Sections */
 
 
 section{
 
     max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:40px 20px;
 
 }
 
@@ -128,11 +134,15 @@ section{
 
 .card{
 
-    background:#121a24;
-    padding:30px;
-    margin:30px 0;
-    border-radius:15px;
-    border:1px solid #273140;
+    background:#121b27;
+
+    padding:35px;
+
+    margin:35px 0;
+
+    border-radius:18px;
+
+    border:1px solid #263241;
 
 }
 
@@ -141,15 +151,25 @@ section{
 .card h2{
 
     color:#ffb000;
+
     margin-bottom:20px;
 
 }
 
 
+
 .card p{
 
-    line-height:1.6;
+    line-height:1.7;
     color:#ddd;
+
+}
+
+
+
+.card li{
+
+    margin:10px;
 
 }
 
@@ -158,72 +178,78 @@ section{
 .card img{
 
     width:100%;
-    border-radius:12px;
+
     margin-top:20px;
+
+    border-radius:15px;
 
 }
 
 
 
-/* MODULES */
+
+
+/* Modules */
 
 
 .modules{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
     gap:20px;
 
 }
 
 
+
 .module{
 
-    background:#151e2a;
+    background:#172231;
+
     padding:25px;
-    border-radius:12px;
+
+    border-radius:15px;
 
 }
+
 
 
 .module h3{
 
     color:#ffb000;
+
     margin-bottom:15px;
 
 }
 
 
 
-/* FOOTER */
+
+
+/* Footer */
 
 
 footer{
 
+    background:#101722;
+
     text-align:center;
-    background:#0f1620;
+
     padding:30px;
+
     color:#aaa;
 
 }
 
 
 
-button{
-
-    background:#ffb000;
-    border:none;
-    padding:12px 25px;
-    border-radius:20px;
-    margin-top:30px;
-
-}
-
-
 </style>
 
-
 </head>
+
 
 
 
@@ -232,6 +258,7 @@ button{
 
 
 <nav>
+
 
 <h2>🔐 SENTINEL-VF</h2>
 
@@ -250,6 +277,7 @@ button{
 
 
 </div>
+
 
 </nav>
 
@@ -273,10 +301,12 @@ Universal Video Forensics & Evidence Integrity Framework
 </p>
 
 
-<img src="../assets/01_title_card.png">
-
+<img src="/SENTINEL-VF/assets/01_title_card.png"
+alt="SENTINEL-VF">
 
 </div>
+
+
 
 
 
@@ -293,11 +323,11 @@ Universal Video Forensics & Evidence Integrity Framework
 
 <p>
 
-SENTINEL-VF is a forensic analysis framework designed to
-standardize DVR/NVR evidence acquisition, verification,
-timeline reconstruction and forensic reporting.
+SENTINEL-VF is a forensic analysis framework designed
+to standardize DVR/NVR evidence acquisition,
+verification, timeline reconstruction and forensic reporting.
 
-The system provides a unified approach for handling
+The system provides a unified approach for analysing
 surveillance evidence from multiple vendors.
 
 </p>
@@ -307,6 +337,7 @@ surveillance evidence from multiple vendors.
 
 
 </section>
+
 
 
 
@@ -323,9 +354,7 @@ surveillance evidence from multiple vendors.
 
 
 <p>
-
-Traditional CCTV forensic investigations face challenges:
-
+Traditional CCTV forensic investigation faces challenges:
 </p>
 
 
@@ -341,7 +370,6 @@ Traditional CCTV forensic investigations face challenges:
 
 <li>Lack of standardized reporting</li>
 
-
 </ul>
 
 
@@ -349,6 +377,7 @@ Traditional CCTV forensic investigations face challenges:
 
 
 </section>
+
 
 
 
@@ -365,12 +394,13 @@ Traditional CCTV forensic investigations face challenges:
 <h2>Our Solution</h2>
 
 
-<img src="../assets/02_three_engines.png">
+<img src="/SENTINEL-VF/assets/02_three_engines.png"
+alt="Three Forensic Engines">
 
 
 <p>
 
-SENTINEL-VF introduces three major forensic engines
+SENTINEL-VF introduces multiple forensic engines
 to recover, validate and analyse surveillance evidence.
 
 </p>
@@ -380,19 +410,23 @@ to recover, validate and analyse surveillance evidence.
 
 
 
+
+
 <div class="card">
 
 
 <h2>Forensic Pipeline</h2>
 
 
-<img src="../assets/03_forensic_pipeline.png">
+<img src="/SENTINEL-VF/assets/03_forensic_pipeline.png"
+alt="Forensic Pipeline">
 
 
 </div>
 
 
 </section>
+
 
 
 
@@ -411,6 +445,7 @@ to recover, validate and analyse surveillance evidence.
 
 
 <div class="modules">
+
 
 
 <div class="module">
@@ -443,7 +478,7 @@ Timestamp reconstruction and timeline uncertainty analysis.
 <h3>Evidence Knowledge Graph</h3>
 
 <p>
-Connects devices, artifacts, events and claims.
+Device, artifact, event and claim relationship mapping.
 </p>
 
 </div>
@@ -456,7 +491,7 @@ Connects devices, artifacts, events and claims.
 <h3>AI Review Module</h3>
 
 <p>
-Assisted analysis and evidence review support.
+AI assisted evidence review and analysis support.
 </p>
 
 </div>
@@ -466,10 +501,10 @@ Assisted analysis and evidence review support.
 
 <div class="module">
 
-<h3>Report Generator</h3>
+<h3>Forensic Report Generator</h3>
 
 <p>
-Creates structured forensic investigation reports.
+Structured investigation report creation.
 </p>
 
 </div>
@@ -489,34 +524,44 @@ Creates structured forensic investigation reports.
 
 
 
+
+
 <section>
 
 
 <div class="card">
 
 
-<h2>Future Scope</h2>
+<h2>System Workflow</h2>
 
 
 <p>
 
-Future improvements include:
+
+DVR/NVR Evidence
+
+↓
+
+Evidence Acquisition
+
+↓
+
+Integrity Verification
+
+↓
+
+Timeline Reconstruction
+
+↓
+
+Evidence Graph
+
+↓
+
+Forensic Report
+
 
 </p>
-
-
-<ul>
-
-<li>Support for more DVR/NVR vendors</li>
-
-<li>Advanced AI assisted forensic analysis</li>
-
-<li>Automated evidence validation</li>
-
-<li>Investigation workflow automation</li>
-
-
-</ul>
 
 
 </div>
@@ -560,6 +605,9 @@ SENTINEL-VF Development Team
 
 
 
+
+
+
 <footer>
 
 
@@ -575,7 +623,7 @@ SIH 2026 | Team CipherNest | SENTINEL-VF
 
 
 
-</body>
 
+</body>
 
 </html>
